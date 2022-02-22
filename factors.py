@@ -13,9 +13,10 @@ def prime_Factor(n):
             factors.append(i)
     if n > 1:
         factors.append(n)
-    print("The prime factorization of ", temp, "is : ", end=" ")
+    print("The prime factorization of ", temp, "is : ")
     for x in range(len(factors)):
-        print(factors[x], end=" ")
+        print(factors[x])
     print()
 
 prime_Factor(var_num)
+
