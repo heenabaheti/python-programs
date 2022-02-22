@@ -1,5 +1,3 @@
-import random
-
 board = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 win_combination = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
 
@@ -11,7 +9,6 @@ def create_board():
 
 
 def game_over():
-    count = 0
     for i, j, k in win_combination:
         if board[i] == board[j] == board[k] == 'O':
             print("Congratulation!! Player 1 won")
@@ -19,7 +16,6 @@ def game_over():
         if board[i] == board[j] == board[k] == 'X':
             print("Congratulation!! Player 2 won")
             return True
-
 
 
 def game():
