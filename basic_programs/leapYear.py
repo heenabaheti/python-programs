@@ -4,11 +4,11 @@ if len(var_leap) != 4:
  var_leap = int(input("Enter your value again in YYYY format:"))
 
 
-def leap_year(var):
-   if var % 4 == 0:
-    print(var, "is a leap year")
+def leap_year(year):
+   if year % 4 == 0 and not(year % 100 == 0 and not(year % 400 == 0)):
+    print(year, "is a leap year")
    else:
-    print(var, "is not a leap year")
+    print(year, "is not a leap year")
 
 
 leap_year(int(var_leap))
