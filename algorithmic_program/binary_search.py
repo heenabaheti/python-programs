@@ -12,7 +12,7 @@ def binarySearch(array, search):
         mid = position + ((length - position) // 2)
 
         res = (search == array[mid])
-
+        print(res)
         # Check if x is present at mid
         if res == 0:
             return mid - 1
