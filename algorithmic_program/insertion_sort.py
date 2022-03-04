@@ -16,13 +16,17 @@ def insertion_sort(array):
             array[occur + 1] = array[occur]
             occur -= 1
         array[occur + 1] = val
-
     return array
 
 
-sample_string = input("Enter the string which you want to sort:")
-arr = [i for i in sample_string]
-sorted_arr = insertion_sort(arr)
-print(f"String before sorting: {sample_string}")
-print(f"Sorted String: {'  '.join(sorted_arr)}")
+def main():
+    sample_string = input("Enter the string which you want to sort:")
+    arr = [i for i in sample_string]
+    sorted_arr = insertion_sort(arr)
+    print(f"String before sorting: {sample_string}")
+    print(f"Sorted String: {'  '.join(sorted_arr)}")
+
+if __name__ == "__main__":
+    main()
+
 

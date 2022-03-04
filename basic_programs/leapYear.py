@@ -1,7 +1,11 @@
-var_leap = input("Enter Year which you want to check :")
-if len(var_leap) != 4:
+"""
+   program to show where the given year is leap year or not
+"""
+
+var = input("Enter Year which you want to check :")
+if len(var) != 4:
  print(" please provide value in YYYY format  ")
- var_leap = int(input("Enter your value again in YYYY format:"))
+ var = int(input("Enter your value again in YYYY format:"))
 
 
 def leap_year(year):
@@ -11,4 +15,5 @@ def leap_year(year):
     print(year, "is not a leap year")
 
 
-leap_year(int(var_leap))
+leap_year(int(var))
+

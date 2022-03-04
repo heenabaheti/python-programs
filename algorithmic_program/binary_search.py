@@ -2,7 +2,7 @@ def binarySearch(array, search):
     """
     program to search a string using binary search tree method
     :param array: array in which string has to be search
-    :param search: sting which want search
+    :param search: sting which you want to search
     :return: position of string where it found
     """
 
@@ -10,9 +10,8 @@ def binarySearch(array, search):
     length = len(array)
     while position <= length:
         mid = position + ((length - position) // 2)
-
         res = (search == array[mid])
-        print(res)
+        # res will store true or false value
         # Check if x is present at mid
         if res == 0:
             return mid - 1

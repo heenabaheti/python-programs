@@ -1,10 +1,9 @@
-
 def monthly_payment(rate, year, principal):
     """
     Calculates Monthly Payment Amount for Loan of given Principal, Years and Rate of interest.
-    :param R: Rate of Interest of Loan provided by user.
-    :param Y: Years of Loan provided by the user.
-    :param P: Principal Amount taken as a Loan by the user
+    :param rate: Rate of Interest of Loan provided by user.
+    :param year: Years of Loan provided by the user.
+    :param principal: Principal Amount taken as a Loan by the user
     :return: monthly payment upon loan
     """
     r = rate / 1200

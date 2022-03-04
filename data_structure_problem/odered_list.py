@@ -23,7 +23,7 @@ class OrderedList:
             itr = itr.next
         itr.next = Node(data, None)
 
-    def print(self):
+    def printing(self):
         if self.head is None:
             print("list is empty")
             return
@@ -63,7 +63,7 @@ class OrderedList:
             count += 1
 
     def insert_at(self, index, data):
-        if index < 0 or index >=self.get_length():
+        if index < 0 or index >= self.get_length():
             raise Exception("Invalid Index")
         if index == 0:
             self.insert_at_begining(data)
@@ -105,24 +105,24 @@ if __name__ == "__main__":
             user_list = input_string.split()
             ll.insert_value(user_list)
             print("List is")
-            ll.print()
+            ll.printing()
             continue
         if num == 2:
             val = int(input("Enter value which you ant to add "))
             pos = int(input("enter position at which you want to add data"))
             ll.insert_at(pos, val)
             print("List is")
-            ll.print()
+            ll.printing()
         if num == 3:
             val = int(input("enter position from where you want to delete "))
             ll.remove_at(val)
             print("List is")
-            ll.print()
+            ll.printing()
         if num == 4:
             val = int(input("enter element which you want to search"))
             ll.search(val)
             print("List is")
-            ll.print()
+            ll.printing()
         if num == 5:
             break
         if num < 0 or num > 5:

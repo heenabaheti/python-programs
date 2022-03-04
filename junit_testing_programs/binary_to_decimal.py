@@ -5,12 +5,11 @@ def binary_to_decimal(binary_num):
       :return: decimal converted value
       """
       n = len(str(binary_num))
-      # n is storing length of string(binary_num)
-
       result = 0
       for i in range(1, n + 1):
          result = result + int(binary_num[i - 1]) * 2 ** (n - i)
-      print("The decimal of the given binary is ", result, '.')
+      result = str(result)
+      print("The decimal of the given binary is ", result)
       return result
 
 

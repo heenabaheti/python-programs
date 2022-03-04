@@ -15,12 +15,12 @@ class SquareRoot:
 
 
 def main():
-        c = abs(int(input("Enter a non negative number: ")))
-        sq = SquareRoot()
-        # sq is an instance of class square root
-        square = sq.square_root(c)
-        # calling & storing value in param(square) returning by square_root method
-        print("Square root of non negative is ", square)
+    c = abs(int(input("Enter a non negative number: ")))
+    sq = SquareRoot()
+    # sq is an instance of class square root
+    square = sq.square_root(c)
+    # calling & storing value in param(square) returning by square_root method
+    print("Square root of non negative is ", square)
 
 
 if __name__ == "__main__":
